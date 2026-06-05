@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alta de Paciente - Consultorio Médico Jaquez</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-brand">
+        <span class="brand-mark">MD</span>
+        <div>
+          <p class="brand-name">Consultorio Médico Jaquez</p>
+          <p class="brand-subtitle">Registro de nuevo paciente</p>
+        </div>
+      </div>
+      <p class="eyebrow">ALTA DE PACIENTE</p>
+      <h2>Registra un paciente en el sistema</h2>
+      <p>Llena los datos del paciente para guardarlo en la base de datos del consultorio.</p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html">Inicio</a>
+    <a href="colecciones.html">Colecciones</a>
+  </nav>
+
+  <main>
+    <section class="section-card">
+      <div class="section-header">
+        <h2>Formulario </h2>
+        <p>Completa todos los campos para crear el registro del paciente.</p>
+      </div>
+
+      <form action="altas.html" method="POST" class="product-form-panel form-grid">
+        <div class="form-field">
+          <label>ID del Paciente:</label>
+          <input type="number" name="id_paciente" required>
+        </div>
+
+        <div class="form-field">
+          <label>Nombre:</label>
+          <input type="text" name="nombre" required>
+        </div>
+
+        <div class="form-field">
+          <label>Apellidos:</label>
+          <input type="text" name="apellidos" placeholder="Ej: Perez" required>
+        </div>
+
+        <div class="form-field">
+          <label>Sexo:</label>
+          <input type="text" name="sexo" placeholder="Ej: Femenino" required>
+        </div>
+
+        <div class="form-field">
+          <label>Edad:</label>
+          <input type="number" name="edad" placeholder="Ej: 21" required>
+        </div>
+
+        <div class="form-field">
+          <label>Teléfono:</label>
+          <input type="tel" name="telefono" placeholder="Ej: 555 555" required>
+        </div>
+
+        <div class="form-field">
+          <label>Fecha de Nacimiento:</label>
+          <input type="date" name="fecha_nac" required>
+        </div>
+
+        <div class="form-field">
+          <label>Dirección:</label>
+          <input type="text" name="direccion" placeholder="Ej: Calle Azul, #2376" required>
+        </div>
+
+        <div class="product-form-actions">
+          <button type="submit" class="btn btn-primary">Dar de alta al Paciente</button>
+          <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p><strong>Consultorio Médico Jaquez</strong> · Negocio: Salud Integral Jaquez</p>
+      <p>Autor: Jaquez Camacho Jesús Ariel · Submódulo: Bases de Datos No Relacionales</p>
+    </div>
+  </footer>
+</body>
+</html>
